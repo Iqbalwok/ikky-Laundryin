@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initLightbox();
     initSmoothScroll();
     initChatbot();
+    initExplorationFilter();
 });
 
 /* ============================================================
@@ -555,4 +556,105 @@ function sendCustomChat() {
         // Open WA
         window.open(`https://wa.me/${phone}?text=${encodeURIComponent('Halo IKKY LAUNDRYIN COIN, ' + text)}`, '_blank');
     }, 400);
+}
+
+/* ============================================================
+   LIVE SEARCH & CATEGORY FILTER (EKSPLORASI SOLUSI)
+   ============================================================ */
+function initExplorationFilter() {
+    const searchInput = document.getElementById('solutionSearchInput');
+    const clearBtn = document.getElementById('solutionSearchClear');
+    const filterPills = document.querySelectorAll('#categoryFilters .filter-pill');
+    const cards = document.querySelectorAll('#solutionsGrid .solution-card');
+    const countEl = document.getElementById('filterResultCount');
+    const emptyState = document.getElementById('solutionsEmptyState');
+    const resetBtn = document.getElementById('btnResetSearch');
+
+    if (!cards.length) return;
+
+    const totalCount = cards.length;
+    let activeCategory = 'all';
+
+    function applyFilter() {
+        const query = searchInput ? searchInput.value.toLowerCase().trim() : '';
+        let visibleCount = 0;
+
+        // Toggle clear button
+        if (clearBtn) {
+            clearBtn.style.display = query ? 'flex' : 'none';
+        }
+
+        cards.forEach(card => {
+            const cardCat = card.getAttribute('data-category') || '';
+            const cardKeywords = (card.getAttribute('data-keywords') || '').toLowerCase();
+            const cardTitle = (card.querySelector('.solution-title')?.textContent || '').toLowerCase();
+            const cardDesc = (card.querySelector('.solution-desc')?.textContent || '').toLowerCase();
+
+            const matchesCategory = activeCategory === 'all' || cardCat === activeCategory;
+            const matchesQuery = !query || 
+                cardKeywords.includes(query) || 
+                cardTitle.includes(query) || 
+                cardDesc.includes(query);
+
+            if (matchesCategory && matchesQuery) {
+                card.classList.remove('is-hidden');
+                visibleCount++;
+            } else {
+                card.classList.add('is-hidden');
+            }
+        });
+
+        // Update count text
+        if (countEl) {
+            countEl.textContent = `Menampilkan ${visibleCount} dari ${totalCount} solusi cuci`;
+        }
+
+        // Show/hide empty state
+        if (emptyState) {
+            emptyState.style.display = visibleCount === 0 ? 'block' : 'none';
+        }
+    }
+
+    // Input search listener
+    if (searchInput) {
+        searchInput.addEventListener('input', applyFilter);
+    }
+
+    // Clear search button listener
+    if (clearBtn) {
+        clearBtn.addEventListener('click', () => {
+            searchInput.value = '';
+            searchInput.focus();
+            applyFilter();
+        });
+    }
+
+    // Category pills listener
+    filterPills.forEach(pill => {
+        pill.addEventListener('click', () => {
+            filterPills.forEach(p => p.classList.remove('active'));
+            pill.classList.add('active');
+            activeCategory = pill.getAttribute('data-category') || 'all';
+            applyFilter();
+        });
+    });
+
+    // Reset button in empty state
+    if (resetBtn) {
+        resetBtn.addEventListener('click', () => {
+            if (searchInput) searchInput.value = '';
+            activeCategory = 'all';
+            filterPills.forEach(p => {
+                if (p.getAttribute('data-category') === 'all') {
+                    p.classList.add('active');
+                } else {
+                    p.classList.remove('active');
+                }
+            });
+            applyFilter();
+        });
+    }
+
+    // Initial run
+    applyFilter();
 }

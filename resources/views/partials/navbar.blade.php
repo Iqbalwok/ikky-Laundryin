@@ -26,19 +26,25 @@
                 <li class="nav-item">
                     <a href="#tentang" class="nav-link">
                         <i class="fas fa-info-circle nav-icon-mobile"></i>
-                        <span>Tentang Kami</span>
+                        <span>Tentang</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#pemilik" class="nav-link">
-                        <i class="fas fa-user-tie nav-icon-mobile"></i>
-                        <span>Profil Pemilik</span>
+                    <a href="#cerita" class="nav-link">
+                        <i class="fas fa-book-open nav-icon-mobile"></i>
+                        <span>Cerita Kami</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="#layanan" class="nav-link">
                         <i class="fas fa-soap nav-icon-mobile"></i>
                         <span>Layanan</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#eksplorasi" class="nav-link">
+                        <i class="fas fa-search nav-icon-mobile"></i>
+                        <span>Eksplorasi</span>
                     </a>
                 </li>
                 <li class="nav-item">

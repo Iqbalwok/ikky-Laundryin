@@ -53,6 +53,27 @@ class CompanyProfileTest extends TestCase
         $response->assertDontSee('Masuk Admin');
     }
 
+    public function test_homepage_displays_storytelling_and_exploration_search_section(): void
+    {
+        $response = $this->get('/');
+
+        $response->assertStatus(200);
+        // Storytelling section
+        $response->assertSee('Cerita di Balik IKKY LAUNDRYIN COIN');
+        $response->assertSee('BAB 01 • AWAL MULA');
+        $response->assertSee('BAB 02 • TITIK BALIK');
+        $response->assertSee('BAB 03 • KELAHIRAN');
+        $response->assertSee('BAB 04 • JANJI KAMI');
+
+        // Exploration search & category section
+        $response->assertSee('Eksplorasi Solusi Cuci &amp; Panduan Koin', false);
+        $response->assertSee('solutionSearchInput');
+        $response->assertSee('Semua Solusi');
+        $response->assertSee('Mesin &amp; Koin', false);
+        $response->assertSee('Jenis Pakaian');
+        $response->assertSee('Tips &amp; Trik', false);
+    }
+
     public function test_login_and_admin_urls_safely_redirect_to_homepage(): void
     {
         $responseLogin = $this->get('/login');

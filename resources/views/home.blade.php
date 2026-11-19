@@ -272,10 +272,113 @@
                 </div>
                 @endif
                 <div class="about-btn-wrap">
-                    <a href="#layanan" class="btn btn-primary mt-3">
-                        <i class="fas fa-arrow-right"></i> Lihat Layanan Kami
+                    <a href="#cerita" class="btn btn-primary mt-3">
+                        <i class="fas fa-book-open"></i> Baca Kisah Perjalanan Kami
                     </a>
                 </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{-- ===== STORYTELLING SECTION: KISAH DI BALIK IKKY LAUNDRYIN COIN ===== --}}
+<section class="story-section" id="cerita">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge">Kisah Nyata Kami</span>
+            <h2>Cerita di Balik IKKY LAUNDRYIN COIN</h2>
+            <p>Dari keresahan cucian yang sering tertukar, jemuran kehujanan, dan waktu yang terbuang — lahirlah tempat laundry mandiri yang higienis, cepat, dan ramah kantong.</p>
+        </div>
+
+        {{-- Highlight Mission Quote Banner --}}
+        <div class="story-banner-quote">
+            <div class="story-banner-icon"><i class="fas fa-heart"></i></div>
+            <div class="story-banner-text">
+                <h4>"Mencuci pakaian seharusnya tidak membuat stres atau menyita seluruh akhir pekanmu."</h4>
+                <p>Inilah prinsip sederhana yang melandasi setiap mesin, koin, dan layanan yang kami siapkan di IKKY LAUNDRYIN COIN.</p>
+            </div>
+        </div>
+
+        {{-- 4 Visual Milestone Cards --}}
+        <div class="story-timeline-grid">
+            <!-- Bab 1 -->
+            <div class="story-card">
+                <div class="story-card-top">
+                    <span class="story-step-badge">BAB 01 • AWAL MULA</span>
+                    <div class="story-icon-bubble problem"><i class="fas fa-cloud-rain"></i></div>
+                </div>
+                <h3 class="story-title">Keresahan Cucian &amp; Baju Tertukar</h3>
+                <p class="story-text">
+                    Bermula dari pengalaman tinggal di sekitar kampus dan lingkungan pemukiman padat: saat musim hujan datang, cucian menumpuk berhari-hari, jemuran tak kering dan menimbulkan bau apek. Titip laundry kiloan biasa pun sering cemas pakaian tertukar, luntur, atau hilang, ditambah harus antre 2–3 hari.
+                </p>
+                <div class="story-keynote">
+                    <i class="fas fa-exclamation-circle"></i> <span>Masalah: Baju lembap, waktu terbuang, privasi minim.</span>
+                </div>
+            </div>
+
+            <!-- Bab 2 -->
+            <div class="story-card">
+                <div class="story-card-top">
+                    <span class="story-step-badge">BAB 02 • TITIK BALIK</span>
+                    <div class="story-icon-bubble idea"><i class="fas fa-lightbulb"></i></div>
+                </div>
+                <h3 class="story-title">Mengapa Tidak Cuci Mandiri Sendiri?</h3>
+                <p class="story-text">
+                    Kami mengamati konsep laundromat modern: mengapa tidak memberikan kendali penuh kepada pelanggan? Satu orang mendapatkan 1 drum mesin khusus sendiri tanpa dicampur. Cukup masukkan koin, cucian selesai cepat dengan standar mesin komersial kelas dunia, dan biayanya sangat hemat.
+                </p>
+                <div class="story-keynote">
+                    <i class="fas fa-check-circle"></i> <span>Solusi: 1 drum pribadi, higienis, selesai dalam hitungan menit.</span>
+                </div>
+            </div>
+
+            <!-- Bab 3 -->
+            <div class="story-card">
+                <div class="story-card-top">
+                    <span class="story-step-badge">BAB 03 • KELAHIRAN</span>
+                    <div class="story-icon-bubble reality"><i class="fas fa-store-alt"></i></div>
+                </div>
+                <h3 class="story-title">Hadirnya IKKY LAUNDRYIN COIN</h3>
+                <p class="story-text">
+                    Didirikan di Jl. Utama Laundry No. 88, outlet pertama resmi dibuka dengan komitmen penuh: mesin cuci berputar kuat dan mesin dryer bersuhu panas higienis. Kami juga merancang ruang tunggu yang sejuk ber-AC, bersih, dan nyaman agar Anda bisa menunggu sambil santai atau mengerjakan tugas.
+                </p>
+                <div class="story-keynote">
+                    <i class="fas fa-map-pin"></i> <span>Dekat kampus &amp; warga, koin mulai Rp5.000 per siklus.</span>
+                </div>
+            </div>
+
+            <!-- Bab 4 -->
+            <div class="story-card">
+                <div class="story-card-top">
+                    <span class="story-step-badge">BAB 04 • JANJI KAMI</span>
+                    <div class="story-icon-bubble promise"><i class="fas fa-smile-beam"></i></div>
+                </div>
+                <h3 class="story-title">Bebas Repot, Lebih Banyak Waktu Luang</h3>
+                <p class="story-text">
+                    Tagline kami bukan sekadar kata-kata: <em>"Tinggal Masukkan Koin, Langsung Jalan!"</em> Hari ini kami bangga menjadi solusi harian yang dipercaya ratusan pelanggan. Datang membawa cucian kotor, pulang dengan pakaian bersih, harum, kering 100%, dan siap langsung dilipat!
+                </p>
+                <div class="story-keynote">
+                    <i class="fas fa-star"></i> <span>Hasil: 45 menit beres, hidup lebih produktif dan bebas repot.</span>
+                </div>
+            </div>
+        </div>
+
+        {{-- Story Impact Stats Bar --}}
+        <div class="story-impact-bar">
+            <div class="story-stat-item">
+                <div class="story-stat-number">&plusmn; 45 Menit</div>
+                <div class="story-stat-label">Total Cuci &amp; Kering Sempurna</div>
+            </div>
+            <div class="story-stat-item">
+                <div class="story-stat-number">100% Pribadi</div>
+                <div class="story-stat-label">1 Drum Khusus, Tanpa Dicampur</div>
+            </div>
+            <div class="story-stat-item">
+                <div class="story-stat-number">Rp5.000</div>
+                <div class="story-stat-label">Tarif Koin Ramah Kantong</div>
+            </div>
+            <div class="story-stat-item">
+                <div class="story-stat-number">Anti Apek</div>
+                <div class="story-stat-label">Bakteri Mati Karena Suhu Panas</div>
             </div>
         </div>
     </div>
@@ -436,6 +539,253 @@
                 <div class="service-body"><h3>Mesin Pengering (Dryer)</h3><p>Layanan pengering pakaian berkecepatan tinggi. Pakaian kering hangat sempurna siap lipat.</p></div>
             </div>
             @endforelse
+        </div>
+    </div>
+</section>
+
+{{-- ===== EKSPLORASI LAYANAN & SOLUSI CUCI (LIVE SEARCH & FILTER KATEGORI) ===== --}}
+<section class="exploration-section" id="eksplorasi">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge">Cari Cepat &amp; Kategori</span>
+            <h2>Eksplorasi Solusi Cuci &amp; Panduan Koin</h2>
+            <p>Cari informasi mesin, jenis cucian Anda (bedcover, jeans, pakaian harian), atau tips mengeringkan di musim hujan secara instan.</p>
+        </div>
+
+        {{-- Search & Filter Controls --}}
+        <div class="exploration-controls">
+            {{-- Live Search Input --}}
+            <div class="search-input-wrapper">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" id="solutionSearchInput" class="solution-search-input" placeholder="Cari misal: bedcover, pengering, jeans, koin, musim hujan, sprei..." autocomplete="off">
+                <button type="button" id="solutionSearchClear" class="search-clear-btn" aria-label="Hapus kata kunci" style="display: none;">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            {{-- Category Filter Pills --}}
+            <div class="category-filter-pills" id="categoryFilters">
+                <button type="button" class="filter-pill active" data-category="all">
+                    <i class="fas fa-border-all"></i> Semua Solusi
+                </button>
+                <button type="button" class="filter-pill" data-category="mesin">
+                    <i class="fas fa-soap"></i> Mesin &amp; Koin
+                </button>
+                <button type="button" class="filter-pill" data-category="pakaian">
+                    <i class="fas fa-tshirt"></i> Jenis Pakaian
+                </button>
+                <button type="button" class="filter-pill" data-category="tips">
+                    <i class="fas fa-lightbulb"></i> Tips &amp; Trik
+                </button>
+            </div>
+
+            {{-- Counter info --}}
+            <div class="filter-meta-bar">
+                <span class="filter-result-count" id="filterResultCount">Menampilkan 8 dari 8 solusi cuci</span>
+                <span class="filter-helper-text"><i class="fas fa-bolt"></i> Filter instan tanpa refresh halaman</span>
+            </div>
+        </div>
+
+        {{-- Solutions Cards Grid --}}
+        <div class="solutions-grid" id="solutionsGrid">
+            <!-- Item 1: Mesin Cuci -->
+            <div class="solution-card" data-category="mesin" data-keywords="mesin cuci washer drum stainless putaran koin deterjen sabun bersih">
+                <div class="solution-card-header">
+                    <span class="solution-category-tag cat-mesin"><i class="fas fa-soap"></i> Mesin &amp; Koin</span>
+                    <span class="solution-badge-price">Mulai Rp5.000</span>
+                </div>
+                <div class="solution-card-body">
+                    <div class="solution-icon-wrap"><i class="fas fa-soap"></i></div>
+                    <h3 class="solution-title">Mesin Cuci Komersial (Washer)</h3>
+                    <p class="solution-desc">Drum stainless steel kapasitas besar dengan putaran stabil. Mengangkat noda membandel secara maksimal namun tetap menjaga kelembutan serat kain.</p>
+                    <div class="solution-tags">
+                        <span class="tag-pill"><i class="fas fa-clock"></i> 30 Menit</span>
+                        <span class="tag-pill"><i class="fas fa-user-shield"></i> 1 Orang 1 Drum</span>
+                        <span class="tag-pill"><i class="fas fa-tint"></i> Air Bersih Tersaring</span>
+                    </div>
+                </div>
+                <div class="solution-card-footer">
+                    <a href="https://wa.me/{{ preg_replace('/[^0-9]/', '', $profile->whatsapp_number ?? '6281234567890') }}?text={{ urlencode('Halo IKKY LAUNDRYIN, saya ingin tanya ketersediaan Mesin Cuci (Washer).') }}" target="_blank" rel="noopener noreferrer" class="btn btn-solution-wa">
+                        <i class="fab fa-whatsapp"></i> Tanya Mesin Cuci
+                    </a>
+                </div>
+            </div>
+
+            <!-- Item 2: Mesin Pengering -->
+            <div class="solution-card" data-category="mesin" data-keywords="mesin pengering dryer komersial kering panas hangat musim hujan anti apek tungau bakteri">
+                <div class="solution-card-header">
+                    <span class="solution-category-tag cat-mesin"><i class="fas fa-wind"></i> Mesin &amp; Koin</span>
+                    <span class="solution-badge-price">Kering 100%</span>
+                </div>
+                <div class="solution-card-body">
+                    <div class="solution-icon-wrap"><i class="fas fa-wind"></i></div>
+                    <h3 class="solution-title">Mesin Pengering Cepat (Dryer)</h3>
+                    <p class="solution-desc">Pengering bertenaga tinggi dengan sirkulasi suhu panas higienis. Pakaian keluar hangat, bebas tungau dan bakteri, langsung kering siap lipat.</p>
+                    <div class="solution-tags">
+                        <span class="tag-pill"><i class="fas fa-clock"></i> 35-40 Menit</span>
+                        <span class="tag-pill"><i class="fas fa-sun"></i> Tanpa Jemuran</span>
+                        <span class="tag-pill"><i class="fas fa-virus-slash"></i> Suhu Steril Higienis</span>
+                    </div>
+                </div>
+                <div class="solution-card-footer">
+                    <a href="https://wa.me/{{ preg_replace('/[^0-9]/', '', $profile->whatsapp_number ?? '6281234567890') }}?text={{ urlencode('Halo IKKY LAUNDRYIN, saya ingin tanya seputar penggunaan Mesin Pengering (Dryer).') }}" target="_blank" rel="noopener noreferrer" class="btn btn-solution-wa">
+                        <i class="fab fa-whatsapp"></i> Tanya Mesin Dryer
+                    </a>
+                </div>
+            </div>
+
+            <!-- Item 3: Mesin Penukar Koin -->
+            <div class="solution-card" data-category="mesin" data-keywords="koin coin changer mesin penukar uang pecahan cash mandiri praktis">
+                <div class="solution-card-header">
+                    <span class="solution-category-tag cat-mesin"><i class="fas fa-coins"></i> Mesin &amp; Koin</span>
+                    <span class="solution-badge-price">Otomatis di Lokasi</span>
+                </div>
+                <div class="solution-card-body">
+                    <div class="solution-icon-wrap"><i class="fas fa-coins"></i></div>
+                    <h3 class="solution-title">Mesin Penukar Koin Otomatis</h3>
+                    <p class="solution-desc">Tak perlu repot mencari uang receh. Di outlet tersedia mesin penukar uang kertas (Rp5.000, Rp10.000, Rp20.000) menjadi koin laundry secara instan.</p>
+                    <div class="solution-tags">
+                        <span class="tag-pill"><i class="fas fa-bolt"></i> Penukaran Instan</span>
+                        <span class="tag-pill"><i class="fas fa-money-bill-wave"></i> Uang Kertas Diterima</span>
+                        <span class="tag-pill"><i class="fas fa-check"></i> Tanpa Potongan Biaya</span>
+                    </div>
+                </div>
+                <div class="solution-card-footer">
+                    <a href="https://wa.me/{{ preg_replace('/[^0-9]/', '', $profile->whatsapp_number ?? '6281234567890') }}?text={{ urlencode('Halo IKKY LAUNDRYIN, saya ingin tanya ketersediaan mesin penukar koin & uang pecahan.') }}" target="_blank" rel="noopener noreferrer" class="btn btn-solution-wa">
+                        <i class="fab fa-whatsapp"></i> Info Penukaran Koin
+                    </a>
+                </div>
+            </div>
+
+            <!-- Item 4: Pakaian Harian -->
+            <div class="solution-card" data-category="pakaian" data-keywords="pakaian harian kaos kemeja seragam celana baju kerja kuliah santai">
+                <div class="solution-card-header">
+                    <span class="solution-category-tag cat-pakaian"><i class="fas fa-tshirt"></i> Jenis Pakaian</span>
+                    <span class="solution-badge-price">Pilihan Favorit</span>
+                </div>
+                <div class="solution-card-body">
+                    <div class="solution-icon-wrap"><i class="fas fa-tshirt"></i></div>
+                    <h3 class="solution-title">Pakaian Harian (Kaos, Kemeja &amp; Seragam)</h3>
+                    <p class="solution-desc">Pilihan utama mahasiswa dan keluarga. Baju kuliah, kerja, atau baju santai dicuci bersih merata, warna tetap cerah, dan serat kain awet.</p>
+                    <div class="solution-tags">
+                        <span class="tag-pill"><i class="fas fa-clock"></i> 30 Menit Cuci</span>
+                        <span class="tag-pill"><i class="fas fa-heart"></i> Lembut di Kulit</span>
+                        <span class="tag-pill"><i class="fas fa-feather-alt"></i> Warna Tidak Kusam</span>
+                    </div>
+                </div>
+                <div class="solution-card-footer">
+                    <a href="https://wa.me/{{ preg_replace('/[^0-9]/', '', $profile->whatsapp_number ?? '6281234567890') }}?text={{ urlencode('Halo IKKY LAUNDRYIN, saya mau cuci pakaian harian / baju kuliah.') }}" target="_blank" rel="noopener noreferrer" class="btn btn-solution-wa">
+                        <i class="fab fa-whatsapp"></i> Tanya Cuci Harian
+                    </a>
+                </div>
+            </div>
+
+            <!-- Item 5: Bedcover & Selimut -->
+            <div class="solution-card" data-category="pakaian" data-keywords="bedcover sprei selimut tebal bed sheet bed cover king size bantal guling">
+                <div class="solution-card-header">
+                    <span class="solution-category-tag cat-pakaian"><i class="fas fa-bed"></i> Jenis Pakaian</span>
+                    <span class="solution-badge-price">Drum Ekstra Lega</span>
+                </div>
+                <div class="solution-card-body">
+                    <div class="solution-icon-wrap"><i class="fas fa-bed"></i></div>
+                    <h3 class="solution-title">Bedcover, Sprei &amp; Selimut Tebal</h3>
+                    <p class="solution-desc">Cuci bedcover ukuran King size tanpa macet! Diameter drum komersial yang luas menjamin air dan deterjen meresap ke seluruh lapisan busa tebal.</p>
+                    <div class="solution-tags">
+                        <span class="tag-pill"><i class="fas fa-expand-arrows-alt"></i> Kapasitas Besar</span>
+                        <span class="tag-pill"><i class="fas fa-bacteria"></i> Bebas Tungau &amp; Debu</span>
+                        <span class="tag-pill"><i class="fas fa-spray-can"></i> Harum Maksimal</span>
+                    </div>
+                </div>
+                <div class="solution-card-footer">
+                    <a href="https://wa.me/{{ preg_replace('/[^0-9]/', '', $profile->whatsapp_number ?? '6281234567890') }}?text={{ urlencode('Halo IKKY LAUNDRYIN, saya ingin tanya kapasitas mesin untuk cuci bedcover tebal.') }}" target="_blank" rel="noopener noreferrer" class="btn btn-solution-wa">
+                        <i class="fab fa-whatsapp"></i> Tanya Cuci Bedcover
+                    </a>
+                </div>
+            </div>
+
+            <!-- Item 6: Celana Jeans & Jaket -->
+            <div class="solution-card" data-category="pakaian" data-keywords="celana jeans jaket denim hoodie sweater kain tebal dingin">
+                <div class="solution-card-header">
+                    <span class="solution-category-tag cat-pakaian"><i class="fas fa-vest"></i> Jenis Pakaian</span>
+                    <span class="solution-badge-price">Bahan Berat</span>
+                </div>
+                <div class="solution-card-body">
+                    <div class="solution-icon-wrap"><i class="fas fa-vest"></i></div>
+                    <h3 class="solution-title">Jeans, Jaket Denim &amp; Hoodie Tebal</h3>
+                    <p class="solution-desc">Bahan tebal yang paling sulit kering saat dijemur di rumah. Di mesin dryer kami, jaket dan jeans kering tuntas merata sampai ke saku dan lipatan terdalam.</p>
+                    <div class="solution-tags">
+                        <span class="tag-pill"><i class="fas fa-fire"></i> Kering Sampai Saku</span>
+                        <span class="tag-pill"><i class="fas fa-shield-alt"></i> Serat Kain Terjaga</span>
+                        <span class="tag-pill"><i class="fas fa-smog"></i> Tanpa Bau Lembap</span>
+                    </div>
+                </div>
+                <div class="solution-card-footer">
+                    <a href="https://wa.me/{{ preg_replace('/[^0-9]/', '', $profile->whatsapp_number ?? '6281234567890') }}?text={{ urlencode('Halo IKKY LAUNDRYIN, saya mau tanya cuci dan keringkan jaket tebal / jeans.') }}" target="_blank" rel="noopener noreferrer" class="btn btn-solution-wa">
+                        <i class="fab fa-whatsapp"></i> Tanya Cuci Jeans &amp; Jaket
+                    </a>
+                </div>
+            </div>
+
+            <!-- Item 7: Solusi Musim Hujan -->
+            <div class="solution-card" data-category="tips" data-keywords="musim hujan mendung cucian menumpuk bau apek lembap jamur jemuran basah">
+                <div class="solution-card-header">
+                    <span class="solution-category-tag cat-tips"><i class="fas fa-cloud-sun-rain"></i> Tips &amp; Trik</span>
+                    <span class="solution-badge-price">Solusi Cuaca</span>
+                </div>
+                <div class="solution-card-body">
+                    <div class="solution-icon-wrap"><i class="fas fa-cloud-sun-rain"></i></div>
+                    <h3 class="solution-title">Solusi Bebas Bau Apek di Musim Hujan</h3>
+                    <p class="solution-desc">Mendung berminggu-minggu bukan lagi halangan! Suhu panas terkontrol mesin dryer mematikan spora jamur penyebab bau apek khas jemuran basah.</p>
+                    <div class="solution-tags">
+                        <span class="tag-pill"><i class="fas fa-umbrella"></i> Kebal Musim Hujan</span>
+                        <span class="tag-pill"><i class="fas fa-wind"></i> Harum Semerbak</span>
+                        <span class="tag-pill"><i class="fas fa-smile"></i> Bebas Jemuran Rumah</span>
+                    </div>
+                </div>
+                <div class="solution-card-footer">
+                    <a href="https://wa.me/{{ preg_replace('/[^0-9]/', '', $profile->whatsapp_number ?? '6281234567890') }}?text={{ urlencode('Halo IKKY LAUNDRYIN, saya butuh solusi keringkan cucian saat musim hujan.') }}" target="_blank" rel="noopener noreferrer" class="btn btn-solution-wa">
+                        <i class="fab fa-whatsapp"></i> Konsultasi Musim Hujan
+                    </a>
+                </div>
+            </div>
+
+            <!-- Item 8: Trik Lipat Hangat -->
+            <div class="solution-card" data-category="tips" data-keywords="trik lipat hangat meja lipat rapi tanpa setrika hemat waktu langsung lemari">
+                <div class="solution-card-header">
+                    <span class="solution-category-tag cat-tips"><i class="fas fa-magic"></i> Tips &amp; Trik</span>
+                    <span class="solution-badge-price">Trik Praktis</span>
+                </div>
+                <div class="solution-card-body">
+                    <div class="solution-icon-wrap"><i class="fas fa-magic"></i></div>
+                    <h3 class="solution-title">Trik Lipat Hangat: Minim Menyetrika!</h3>
+                    <p class="solution-desc">Rahasia pakaian rapi tanpa capek: saat mesin dryer berbunyi selesai, segera keluarkan baju selagi hangat, kibaskan sekali, dan lipat di meja lipat outlet kami.</p>
+                    <div class="solution-tags">
+                        <span class="tag-pill"><i class="fas fa-check-double"></i> Meja Lipat Tersedia</span>
+                        <span class="tag-pill"><i class="fas fa-hourglass-end"></i> Hemat Waktu 80%</span>
+                        <span class="tag-pill"><i class="fas fa-tshirt"></i> Siap Pakai Langsung</span>
+                    </div>
+                </div>
+                <div class="solution-card-footer">
+                    <a href="https://wa.me/{{ preg_replace('/[^0-9]/', '', $profile->whatsapp_number ?? '6281234567890') }}?text={{ urlencode('Halo IKKY LAUNDRYIN, saya ingin tanya ketersediaan fasilitas meja lipat dan pewangi.') }}" target="_blank" rel="noopener noreferrer" class="btn btn-solution-wa">
+                        <i class="fab fa-whatsapp"></i> Tanya Fasilitas Lipat
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        {{-- Empty State (Jika Pencarian Tidak Ditemukan) --}}
+        <div class="solutions-empty-state" id="solutionsEmptyState" style="display: none;">
+            <div class="empty-icon"><i class="fas fa-search-minus"></i></div>
+            <h3>Layanan atau Informasi Belum Ditemukan</h3>
+            <p>Kata kunci yang Anda cari belum cocok dengan katalog di atas. Coba gunakan kata kunci seperti <strong>koin, pengering, bedcover, jeans, atau musim hujan</strong>.</p>
+            <div class="empty-actions">
+                <button type="button" class="btn btn-outline-primary" id="btnResetSearch">
+                    <i class="fas fa-redo"></i> Tampilkan Semua Solusi
+                </button>
+                <a href="https://wa.me/{{ preg_replace('/[^0-9]/', '', $profile->whatsapp_number ?? '6281234567890') }}?text={{ urlencode('Halo IKKY LAUNDRYIN, saya mencari informasi layanan tertentu yang belum ada di website.') }}" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-empty">
+                    <i class="fab fa-whatsapp"></i> Tanya Langsung ke CS
+                </a>
+            </div>
         </div>
     </div>
 </section>

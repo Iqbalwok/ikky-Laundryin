@@ -20,8 +20,10 @@
                 <ul>
                     <li><a href="#beranda">Beranda</a></li>
                     <li><a href="#tentang">Tentang Kami</a></li>
+                    <li><a href="#cerita">Cerita Kami</a></li>
                     <li><a href="#pemilik">Profil Pemilik</a></li>
                     <li><a href="#layanan">Layanan Mesin</a></li>
+                    <li><a href="#eksplorasi">Eksplorasi Solusi</a></li>
                     <li><a href="#keunggulan">Keunggulan</a></li>
                     <li><a href="#cara-kerja">Cara Kerja</a></li>
                     <li><a href="#galeri">Galeri Foto</a></li>
